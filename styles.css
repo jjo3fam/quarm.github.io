@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #0b0b0b;
+  color: #e0e0e0;
+  background-image: linear-gradient(135deg, #0b0b0b 25%, #1a1a1a 100%);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0f0f;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #444;
+}
+
+.logo-small {
+  width: 160px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #121212, #0a0a0a);
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #e6e6e6;
+  text-shadow: 0 0 5px #aaa, 0 0 15px #fff;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.logo-hero {
+  width: 480px;
+  max-width: 90%;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 8px #888) drop-shadow(0 0 4px #fff);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid #aaa;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ddd;
+  color: #111;
+  box-shadow: 0 0 15px #999;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.section h1, .section h2, .section h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #cccccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0a0a0a;
+  border-top: 2px solid #333;
+}
+
+.section h1, .section h2, .section h3 {
+  color: #cccccc;
+  text-shadow: 0 0 6px #888;
+}
+.btn {
+  border-color: #aaa;
+  color: #eee;
+}
+.btn:hover {
+  background: #ccc;
+  color: #111;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.filters {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-card {
+  background: #111;
+  border: 1px solid #333;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+.project-card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.completed {
+  background: #4caf50;
+  color: #fff;
+}
+.in-progress {
+  background: #ff9800;
+  color: #fff;
+}
+.upcoming {
+  background: #2196f3;
+  color: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.gallery-item {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+.caption {
+  padding: 0.75rem 1rem;
+  color: #ddd;
+  font-size: 0.9rem;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+}
+
+.blog-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-post {
+  background: #121212;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #000;
+}
+.blog-post h2 {
+  color: #f0c040;
+  margin-top: 0;
+}
+.blog-post p {
+  color: #ccc;
+}
